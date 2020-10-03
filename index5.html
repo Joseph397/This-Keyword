@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 This keyword</title>
+  </head>
+  <body>
+    <script>
+
+      // const user = {
+      //   name: "ed",
+      //   videos:["html", "css", "js", "react"],
+      //   greet() {
+      //     let self = this;
+      //     console.log(`Hello there ${self.name}`);
+      //     // Add Function
+      //     const getVideos = function() { // when you create a function within a method(function in an object) this keyword is set
+      //       console.log(`You currently have ${self.videos.length} videos`);
+      //     };
+      //     getVideos();
+      //   },
+      // };
+
+      // user.greet();
+
+// A diffrent way, with arrow function
+      const user = {
+        name: "ed",
+        videos:["html", "css", "js", "react"],
+        greet() {
+          console.log(`Hello there ${this.name}`);
+          const getVideos = () => {  // when you create a Arrow function within a method this keyword is not
+            console.log(`You currently have ${this.videos.length} videos`);
+          };
+          getVideos();
+        },
+      };
+
+      user.greet();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 This Keyword</title>
+  </head>
+  <body>
+    <script>
+    // // Without arrow function
+    //   const user = {
+    //     name: "ed",
+    //     videos: ["html", "css", "js", "react"],
+    //     greet() {
+    //       console.log(`Hello there ${this.name}`);
+    //         this.videos.forEach(function(video){
+    //             console.log(this);
+    //         })
+    //     }
+    //   };  // Dosent work because function inside method reassigned this keyword value
+
+    //   user.greet();
+
+    // with Arrow  functions 
+      const user = {
+        name: "ed",
+        videos: ["html", "css", "js", "react"],
+        greet() {
+          console.log(`Hello there ${this.name}`);
+            this.videos.forEach((video) => console.log(this)); // arrow function dosent reassign this keyword allowing this code to run smoothely
+            
+        }
+      };
+
+      user.greet();
+    </script>
+  </body>
+</html>

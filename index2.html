@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 This Keyword</title>
+  </head>
+  <body>
+    <script>
+    // //  This Keyword is useful for objects
+    // const user = {
+    //     name: 'developedbyed',
+    //     sayHi: function() {
+    //         console.log(this);// refers to user because its on the left of the .
+    //     }
+    // };
+
+    // same as before except adding a function inside an object can be done more simply
+    // when you use Keyword this in a method on an object its going to point to that object itself
+    const user = {
+        name: 'ed',
+        sayHi(){
+            console.log(this.name);
+        }
+    };
+
+    // console.log(user.name);
+    user.sayHi(); // left of the dot is refered to by this
+
+</script>
+  </body>
+</html>
+

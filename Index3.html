@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 This Keyword</title>
+</head>
+<body>
+    <script>
+        // // without this keyword... supposidly
+        // const user = {
+        //     name: "developedbyed",
+        //     sayHi(){
+        //         console.log(user.name)
+        //     }
+        // };
+        // const admin = {
+        //     name: "admin",
+        //     sayHi(){
+        //         console.log(user.name)
+        //     }
+        // };
+
+        // function sayHi(){
+            
+        // }
+
+        // user.hi = sayHi;
+        // admin.hi = sayHi;
+
+        // user.hi();
+        // admin.hi();
+
+        // // ex.2 with this keyword
+        // const user = {
+        //     name: "developedbyed"
+        // };
+        // const admin = {
+        //     name: "admin"
+        // };
+
+        // function sayHi(){
+        //     console.log(this);
+        // }
+
+        // user.hi = sayHi;
+        // admin.hi = sayHi;
+
+        // user.hi();
+        // admin.hi();
+
+        // ex.3 with this keyword
+        const user = {
+            name: "developedbyed"
+        };
+        const admin = {
+            name: "admin"
+        };
+
+        function yell(){
+            console.log(this);
+        }
+
+        user.yell = yell;
+        admin.yell = yell;
+
+        user.yell();
+        admin.yell();
+        
+    </script>
+</body>
+</html>
